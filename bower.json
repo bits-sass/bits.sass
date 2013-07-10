@@ -3,7 +3,13 @@
   "version": "0.1.0",
   "author": "Lukáš Mladý",
   "dependencies": {
+    "bits-css-arrange": "~0.1.0",
+    "bits-css-base": "~0.1.0",
+    "bits-css-button": "~0.1.0",
+    "bits-css-button-group": "~0.1.0",
+    "bits-css-flex-embed": "~0.1.0",
     "bits-css-grid": "~0.1.0",
+    "bits-css-grid-layouts": "~0.1.0",
     "bits-css-mixins": "~0.1.0",
     "bits-css-utils": "~0.1.0"
   }
