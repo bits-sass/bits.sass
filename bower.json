@@ -4,6 +4,7 @@
   "author": "Lukáš Mladý",
   "dependencies": {
     "bits-css-grid": "~0.1.0",
+    "bits-css-mixins": "~0.1.0",
     "bits-css-utils": "~0.1.0"
   }
 }
