@@ -1,0 +1,9 @@
+{
+  "name": "bits-css",
+  "version": "0.1.0",
+  "author": "Lukáš Mladý",
+  "dependencies": {
+    "bits-css-grid": "~0.1.0",
+    "bits-css-utils": "~0.1.0"
+  }
+}
