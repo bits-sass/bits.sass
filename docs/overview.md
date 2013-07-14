@@ -47,7 +47,6 @@ The complete set of naming patterns is as follows:
 * `ComponentName`
 * `ComponentName--modifierName`
 * `ComponentName-descendantName`
-* `ComponentName-descendantName--modifierName`
 * `is-stateOfComponent`
 * `with-ComponentName`
 
@@ -276,7 +275,7 @@ slower rate than those in 'theme'.
 It is possible that the 'core' directory may contain only a few files because
 of the usage of bower (and its 'bower_components' directory).
 
-For example:
+For example ([see code](../example-structure)):
 
 ```
 scss
