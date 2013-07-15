@@ -2,6 +2,8 @@
 
 === 0.2.0 (July 14, 2013)
 
+* Update docs/overview.md file
+* Remove .gitignore
 * Finish README file
 * Bump `bits-scss-arrange` dependency to ~0.2.0
 * Bump `bits-scss-button` dependency to ~0.2.0
