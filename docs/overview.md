@@ -150,7 +150,7 @@ selector. For example:
 ## Main.scss
 
 Make use of `@import` to include variables, utilities, mixins, components and in your
-main.scss file. Here is a sample main.scss file from [example-code](../example-code):
+main.scss file. Here is a sample main.scss:
 
 ```scss
 /* main.scss */
@@ -187,8 +187,7 @@ main.scss file. Here is a sample main.scss file from [example-code](../example-c
 
 /* App-specific mixins */
 
-@import "mixins/transition";
-@import "mixins/text";
+@import "mixins/…";
 
 /* Base styles
    ========================================================================== */
@@ -201,14 +200,9 @@ main.scss file. Here is a sample main.scss file from [example-code](../example-c
 
 @import "../bower_components/…";
 
-/* Core */
+/* App-specific base */
 
-@import "core/utils/display";
-@import "core/utils/text";
-
-/* Theme */
-
-@import "theme/utils/text";
+@import "base/…";
 
 /* Utilities
    ========================================================================== */
@@ -219,12 +213,11 @@ main.scss file. Here is a sample main.scss file from [example-code](../example-c
 
 /* Core */
 
-@import "core/utils/display";
-@import "core/utils/text";
+@import "core/utils/…";
 
 /* Theme */
 
-@import "theme/utils/text";
+@import "theme/utils/…";
 
 /* Components
    ========================================================================== */
@@ -235,15 +228,13 @@ main.scss file. Here is a sample main.scss file from [example-code](../example-c
 
 /* Core */
 
-@import "core/components/button";
-@import "core/components/button-group";
-@import "core/components/grid";
+@import "core/components/…";
 
 /* Theme */
 
-@import "theme/components/button";
+@import "theme/components/…";
 
-/* Shame file for quick fixes, should be kept clean
+/* Shame file for quick fixes / hacks
    ========================================================================== */
 
 @import "shame";
@@ -275,16 +266,16 @@ slower rate than those in 'theme'.
 It is possible that the 'core' directory may contain only a few files because
 of the usage of bower (and its 'bower_components' directory).
 
-For example ([see code](../example-structure)):
+For example:
 
 ```
 scss
 ├── _shame.scss
 ├── main.scss
+├── base
+|   ├── _typography.scss
+|   └── _forms.scss
 ├── core
-|   ├── base
-|   |   ├── _typography.scss
-|   |   ├── _forms.scss
 |   ├── components
 |   |   ├── _button.scss
 |   |   ├── _button-group.scss
@@ -298,9 +289,6 @@ scss
 |   ├── _transition.scss
 |   └── _text.scss
 ├── theme
-|   ├── base
-|   |   ├── _typography.scss
-|   |   └── _forms.scss
 |   ├── components
 |   |   ├── _button.scss
 |   |   └── _stream-item.scss
