@@ -162,13 +162,13 @@ main.scss file. Here is a sample main.scss:
 
 @import "variables/global";
 
-/* Mixins */
-
-@import "variables/mixins/…";
-
 /* Base */
 
 @import "variables/base/…";
+
+/* Mixins */
+
+@import "variables/mixins/…";
 
 /* Components */
 
