@@ -1,6 +1,6 @@
 # Bits.scss
 
-A structural SCSS UI toolkit based on Nicolas Gallagher's SUIT using OOCSS, SMACSS and BEM methodologies.
+A structural UI toolkit based on Nicolas Gallagher's SUIT and written using SASS.
 
 Practically a fork of Nicolas Gallagher's [SUIT](https://github.com/suitcss) rewritten using [SASS](http://sass-lang.com/)
 and considerably extended.
