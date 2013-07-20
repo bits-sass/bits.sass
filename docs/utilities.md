@@ -1,4 +1,4 @@
-# Bits.scss utilities
+# Bits.sass utilities
 
 [Back to overview](overview.md)
 

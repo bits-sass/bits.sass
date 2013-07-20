@@ -1,6 +1,6 @@
 # Overview
 
-Bits.scss aims to loosely couple document semantics, presentation, and behaviour so
+Bits.sass aims to loosely couple document semantics, presentation, and behaviour so
 as to be able to modify any one of them with minimal impact on the others.
 
 1. Write less CSS by codifying common structural and stylistic patterns in a way
@@ -18,7 +18,7 @@ as to be able to modify any one of them with minimal impact on the others.
 
 ## Architecture overview
 
-Bits.scss uses "meaningful hyphens" in HTML class names. At least one hyphen is used
+Bits.sass uses "meaningful hyphens" in HTML class names. At least one hyphen is used
 to separate types and names, but not words. All component names must use "Pascal
 case"; all other names must be "Camel case".
 
@@ -62,7 +62,7 @@ to a different value.
 
 ## Authoring guidelines
 
-Bits.scss aims to make it easier for teams to work with, and reuse, HTML/CSS.
+Bits.sass aims to make it easier for teams to work with, and reuse, HTML/CSS.
 
 * Favour readable and understand class names for components and their
   constituent parts. Use names that are as short as possible but as long as
@@ -343,7 +343,7 @@ should be `@import`ed in following order:
 
 ## Build tools
 
-Bits.scss relies on some form of build process to produce production-ready code.
+Bits.sass relies on some form of build process to produce production-ready code.
 Imports should be inlined, CSS should be stripped of comments and minified, and
 Media Queries should wrap the code from every import that appends them.
 

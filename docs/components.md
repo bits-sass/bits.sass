@@ -1,4 +1,4 @@
-# Bits.scss components
+# Bits.sass components
 
 [Back to overview](overview.md)
 

@@ -1,4 +1,4 @@
-# Bits.scss
+# Bits.sass
 
 A structural UI toolkit based on Nicolas Gallagher's SUIT and written using SASS.
 
@@ -7,7 +7,7 @@ and considerably extended.
 
 ## Installation
 
-__Bower:__ `bower install --save bits-scss`
+__Bower:__ `bower install --save bits-sass`
 
 This command installs all subpackages. See the list below.
 
@@ -17,31 +17,31 @@ Each package is stand-alone, contains its own documentation and tests, and is wr
 a common set of [naming conventions and authoring practices](docs/overview.md).
 Dependencies are best managed using [Bower](http://bower.io) – a package manager for the web.
 
-__Utilities__: [all](https://github.com/bits-scss/utils), [detailed info](https://github.com/bits-scss/docs/utilities.md)
+__Utilities__: [all](https://github.com/bits-sass/utils), [detailed info](https://github.com/bits-sass/docs/utilities.md)
 
-* [Dimension](https://github.com/bits-scss/utils-dimension)
-* [Display](https://github.com/bits-scss/utils-display)
-* [Image](https://github.com/bits-scss/utils-image)
-* [Layout](https://github.com/bits-scss/utils-layout)
-* [Link](https://github.com/bits-scss/utils-link)
-* [Offset](https://github.com/bits-scss/utils-offset)
-* [Space](https://github.com/bits-scss/utils-space)
-* [State](https://github.com/bits-scss/utils-state)
-* [Text](https://github.com/bits-scss/utils-text)
+* [Dimension](https://github.com/bits-sass/utils-dimension)
+* [Display](https://github.com/bits-sass/utils-display)
+* [Image](https://github.com/bits-sass/utils-image)
+* [Layout](https://github.com/bits-sass/utils-layout)
+* [Link](https://github.com/bits-sass/utils-link)
+* [Offset](https://github.com/bits-sass/utils-offset)
+* [Space](https://github.com/bits-sass/utils-space)
+* [State](https://github.com/bits-sass/utils-state)
+* [Text](https://github.com/bits-sass/utils-text)
 
-__Mixins__: [all](https://github.com/bits-scss/mixins)
+__Mixins__: [all](https://github.com/bits-sass/mixins)
 
-* [Miscellaneous](https://github.com/bits-scss/mixins-misc)
-* [Text](https://github.com/bits-scss/mixins-text)
+* [Miscellaneous](https://github.com/bits-sass/mixins-misc)
+* [Text](https://github.com/bits-sass/mixins-text)
 
-__Components__: [detailed info](https://github.com/bits-scss/docs/components.md)
+__Components__: [detailed info](https://github.com/bits-sass/docs/components.md)
 
-* [Arrange](https://github.com/bits-scss/arrange)
-* [Button](https://github.com/bits-scss/button)
-* [Button group](https://github.com/bits-scss/button-group)
-* [Flexible embeds](https://github.com/bits-scss/flex-embed)
-* [Grid](https://github.com/bits-scss/grid)
-* [Grid layouts](https://github.com/bits-scss/grid-layouts)
+* [Arrange](https://github.com/bits-sass/arrange)
+* [Button](https://github.com/bits-sass/button)
+* [Button group](https://github.com/bits-sass/button-group)
+* [Flexible embeds](https://github.com/bits-sass/flex-embed)
+* [Grid](https://github.com/bits-sass/grid)
+* [Grid layouts](https://github.com/bits-sass/grid-layouts)
 
 __Themes__:
 
@@ -49,7 +49,7 @@ __Themes__:
 
 ## Features
 
-**[Read about the design decisions and authoring principles of Bits.scss](docs/overview.md)**.
+**[Read about the design decisions and authoring principles of Bits.sass](docs/overview.md)**.
 
 * Highly modular; each module is individually versioned.
 * Provides common, low-level utility classes.
