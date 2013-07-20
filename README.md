@@ -32,6 +32,7 @@ __Utilities__: [all](https://github.com/bits-sass/utils), [detailed info](https:
 __Mixins__: [all](https://github.com/bits-sass/mixins)
 
 * [Miscellaneous](https://github.com/bits-sass/mixins-misc)
+* [Responsive](https://github.com/bits-sass/mixins-responsive)
 * [Text](https://github.com/bits-sass/mixins-text)
 
 __Components__: [detailed info](https://github.com/bits-sass/docs/components.md)
