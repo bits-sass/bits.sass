@@ -1,6 +1,6 @@
 # Bits.sass
 
-A structural UI toolkit based on Nicolas Gallagher's SUIT and written using SASS.
+A structural UI toolkit.
 
 Practically a fork of Nicolas Gallagher's [SUIT](https://github.com/suitcss) rewritten using [SASS](http://sass-lang.com/)
 and considerably extended.
