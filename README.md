@@ -17,7 +17,7 @@ Each package is stand-alone, contains its own documentation and tests, and is wr
 a common set of [naming conventions and authoring practices](docs/overview.md).
 Dependencies are best managed using [Bower](http://bower.io) – a package manager for the web.
 
-__Utilities__: [all](https://github.com/bits-sass/utils), [detailed info](https://github.com/bits-sass/docs/utilities.md)
+__Utilities__: [all](https://github.com/bits-sass/utils), [detailed info](docs/utilities.md)
 
 * [Dimension](https://github.com/bits-sass/utils-dimension)
 * [Display](https://github.com/bits-sass/utils-display)
@@ -35,14 +35,13 @@ __Mixins__: [all](https://github.com/bits-sass/mixins)
 * [Responsive](https://github.com/bits-sass/mixins-responsive)
 * [Text](https://github.com/bits-sass/mixins-text)
 
-__Components__: [detailed info](https://github.com/bits-sass/docs/components.md)
+__Components__: [detailed info](docs/components.md)
 
 * [Arrange](https://github.com/bits-sass/arrange)
 * [Button](https://github.com/bits-sass/button)
 * [Button group](https://github.com/bits-sass/button-group)
 * [Flexible embeds](https://github.com/bits-sass/flex-embed)
 * [Grid](https://github.com/bits-sass/grid)
-* [Grid layouts](https://github.com/bits-sass/grid-layouts)
 
 __Themes__:
 
