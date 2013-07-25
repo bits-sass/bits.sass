@@ -29,11 +29,11 @@ __Utilities__: [all](https://github.com/bits-sass/utils), [detailed info](docs/u
 * [State](https://github.com/bits-sass/utils-state)
 * [Text](https://github.com/bits-sass/utils-text)
 
-__Mixins__: [all](https://github.com/bits-sass/mixins)
+__Helpers__: [all](https://github.com/bits-sass/helpers)
 
-* [Miscellaneous](https://github.com/bits-sass/mixins-misc)
-* [Responsive](https://github.com/bits-sass/mixins-responsive)
-* [Text](https://github.com/bits-sass/mixins-text)
+* [Miscellaneous](https://github.com/bits-sass/helpers-misc)
+* [Responsive](https://github.com/bits-sass/helpers-responsive)
+* [Text](https://github.com/bits-sass/helpers-text)
 
 __Components__: [detailed info](docs/components.md)
 

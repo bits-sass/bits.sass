@@ -1,5 +1,9 @@
 === HEAD
 
+=== 0.4.0 (July 25, 2013)
+
+* Rename package 'mixins' to a more precise 'helpers'
+
 === 0.3.0 (July 20, 2013)
 
 * Rename organization's name to 'Bits.sass'
