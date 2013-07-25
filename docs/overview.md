@@ -149,7 +149,7 @@ selector. For example:
 
 ## Main.scss
 
-Make use of `@import` to include variables, utilities, mixins, components and in your
+Make use of `@import` to include variables, utilities, helpers, components and in your
 main.scss file. Here is a sample main.scss:
 
 ```scss
@@ -166,9 +166,9 @@ main.scss file. Here is a sample main.scss:
 
 @import "variables/base/…";
 
-/* Mixins */
+/* Helpers */
 
-@import "variables/mixins/…";
+@import "variables/helpers/…";
 
 /* Components */
 
@@ -178,16 +178,16 @@ main.scss file. Here is a sample main.scss:
 
 @import "variables/utils/…";
 
-/* Mixins
+/* Helpers
    ========================================================================== */
 
 /* Stand-alone packages */
 
 @import "../bower_components/…";
 
-/* App-specific mixins */
+/* App-specific helpers */
 
-@import "mixins/…";
+@import "helpers/…";
 
 /* Base styles
    ========================================================================== */
@@ -285,7 +285,7 @@ scss
 |       ├── _display.scss
 |       ├── _layout.scss
 |       └── _text.scss
-├── mixins
+├── helpers
 |   ├── _transition.scss
 |   └── _text.scss
 ├── theme
@@ -304,7 +304,7 @@ scss
     |   ├── _button.scss
     |   ├── _button-group.scss
     |   └── _grid.scss
-    ├── mixins
+    ├── helpers
     |   ├── _transition.scss
     |   └── _text.scss
     └── utils
