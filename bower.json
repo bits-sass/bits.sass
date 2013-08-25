@@ -1,6 +1,6 @@
 {
   "name": "bits-sass",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "author": "Lukáš Mladý",
   "dependencies": {
     "bits-sass-arrange": "~0.2.1",
@@ -10,6 +10,6 @@
     "bits-sass-flex-embed": "~0.3.0",
     "bits-sass-grid": "~0.2.1",
     "bits-sass-helpers": "~0.5.0",
-    "bits-sass-utils": "~0.6.0"
+    "bits-sass-utils": "~0.7.0"
   }
 }

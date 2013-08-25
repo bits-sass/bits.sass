@@ -1,5 +1,9 @@
 === HEAD
 
+=== 0.5.0 (August 25, 2013)
+
+* Bump `bits-sass-utils` dependency to ~0.7.0
+
 === 0.4.0 (July 25, 2013)
 
 * Rename package 'mixins' to a more precise 'helpers'
