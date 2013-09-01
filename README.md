@@ -5,6 +5,8 @@ A structural UI toolkit.
 Practically a fork of Nicolas Gallagher's [SUIT](https://github.com/suitcss) rewritten using [SASS](http://sass-lang.com/)
 and considerably extended.
 
+See [documentation](docs/README.md).
+
 ## Installation
 
 __Bower:__ `bower install --save bits-sass`

@@ -1,174 +1,197 @@
 # Bits.sass components
 
-[Back to overview](overview.md)
+Components are UI patterns. Think of them a bit like custom elements. You
+cannot merge elements, only nest them – avoid composing components on the same
+element.
 
-Components are custom UI patterns. Components may be built up from
-utilities and an additional layer of custom styles (that are themselves not yet
-generic enough to be abstracted into a utility or smaller component).
+(Read about Bits.sass's [naming conventions](naming-conventions.md).)
 
-* Files should be small and well commented.
-* In general, components should be focused on structural presentation so that
-  they work well with theming layers.
-* Including example HTML in your CSS comments.
 
-If a component file is starting to get quite large, it probably consists of
-multiple, indepedent components and should be broken up into multiple files.
+## Using components
 
-To use a component's styles, apply the classes directly to HTML elements. If
-you have a UI pattern that is used in many places, consider creating a template
-for it rather than rewriting it multiple times in different templates.
+Components are not _just_ CSS. A component is a combination of CSS and an HTML
+template. That template might make use of utilities to avoid repeating common,
+existing abstractions.
 
-## Naming conventions
+The preference is to compose classes in the HTML rather than writing new CSS.
+Once abstractions and components have been authored, they can be reused and
+composed in different ways, in different templates.
 
-Components use _structured class names_ and _meaningful hyphens_. This is their
-format:
+### Nesting components
 
-```
-[<ns>-]<ComponentName>[--modifierName|-childName]
-```
-
-This has several benefits when writing CSS and reading HTML:
-
-* It helps to distinguish classes for base components, modifiers of components,
-  and child elements.
-* It keeps the specificity of selectors low.
-* It helps to decouple presentation semantics from document semantics.
-
-### Namespace
-
-All components use a default namespace of 'bits-'. This can be
-overridden by setting the `bits-components-ns` variable to a different value.
-
-This makes it clear, when reading the HTML, which components are part of what
-library.
-
-### ComponentName
-
-The component's name must be written in Pascal case. Nothing else in the
-HTML/CSS uses Pascal case.
-
-```css
-.MyComponent { /* … */ }
-```
+If the HTML for a component is treated like a custom element, you avoid CSS
+specificity issues by not applying different component classes to the same HTML
+element. Utilities can be composed on the same element as components.
 
 ```html
-<article class="MyComponent">
-  …
-</article>
-```
+<article class="app-Excerpt u-cf">
+  <img class="app-Excerpt-thumbnail u-sizeFit" src="{src}" alt="">
+  <div class="u-sizeFill">
+    {content}
 
-### ComponentName--modifierName
-
-A component modifier is a class that modifies or extends the presentation of
-the base component in some form. Modifier names must be written in Camel
-case. The class should be included _in addition_ to the base component class.
-
-```scss
-/* Core button */
-.Button { /* … */ }
-
-/* Primary button */
-.Button--primary {
-  /* … */
-
-  > .Button-frontIcon {
-    /* … */
-  }
-
-  /* … */
-}
-```
-
-```html
-<button class="Button Button--primary">…</button>
-```
-
-### ComponentName-descendantName
-
-A component descendant is a class that is attached to a descendant node of a
-component. It's responsible for applying presentation directly to the
-descendant on behalf of a particular component. Descendant names must be
-written in Camel case.
-
-```html
-<article class="Tweet">
-    <header class="Tweet-header">
-        <img class="Tweet-avatar" src="{{src}}" alt="{{alt}}">
-        …
-    </header>
-    <div class="Tweet-body">
-        …
-    </div>
-</article>
-```
-
-### is-stateOfComponent
-
-Use `is-stateName` for state-based modifications of components. The state name
-must be Camel case. Never style these classes directly; they should always be
-used as a chaining class. JS can add/remove these classes. This means that the
-same state names can be used in multiple contexts, but every component must
-define its own styles for the state (as they are scoped to the component).
-
-```css
-.Tweet { /* … */ }
-.Tweet.is-expanded { /* … */ }
-```
-
-```html
-<article class="Tweet is-expanded">
-  …
-</article>
-```
-
-### with-ComponentName
-
-Use the `with-ComponentName` pattern to bundle styles that need to be mixed
-into an element that hosts your component. The `with-*` pattern classes should
-be standalone selectors, never styled as chained to a component. Treat it like
-a mixin.
-
-For example, the `with-Dropdown` class might include styles that are required
-for the child `Dropdown` component to render as expected.
-
-```scss
-/* _dropdown.scss */
-
-/* The host element of a Dropdown always needs these styles */
-.with-Dropdown { position: relative; }
-```
-
-```html
-<article class="Tweet with-Dropdown">
-  [other content]
-  <div class="Dropdown is-closed">
-    …
+    <button class="Button Button--default" type="button">
+      <span class="Button-icon">
+        <span class="Icon Icon--tick"></span>
+      </span>
+      <span class="Button-label">{text}</span>
+    </button>
   </div>
 </article>
 ```
 
-If a specific host component needs custom style-adjustments when it contains
-another type of component, you should use a component modifier (not a
-`with-ComponentName`) class.
+This pattern encourages the creation of partials corresponding to components,
+where possible:
+
+```html
+<article class="app-Excerpt u-cf">
+  <img class="app-Excerpt-thumbnail u-sizeFit" src="{src}" alt="">
+  <div class="u-sizeFill">
+    <h1 class="app-Excerpt-title u-h3"><a href="{url}">{content}</a></h1>
+
+    {{>default_button_and_icon}}
+  </div>
+</article>
+```
+
+
+## Creating components
+
+### One pattern, one component, one file
+
+Each component must be in a dedicated file. Each component should concern
+itself with realising a single UI pattern. Don't try to do too much.
+
+If a component file is starting to get quite large, it probably consists of
+multiple, indepedent components and should be broken up into multiple files.
+
+### Document thoroughly
+
+Component names should be as short as possible but as long as necessary. Files
+should be small but well commented. These are some of the questions your
+comments should answer:
+
+* What is the component for?
+* How should it be used?
+* What should the corresponding HTML look like?
+* What are the known limitations?
+
+### Rely on utilities
+
+Utilities are simple, shared abstractions that components may depend on. Any
+number of utilities may be included in a component's HTML if they help you to
+create the intended outcome.
+
+```html
+<!-- Tweet component template -->
+<div class="Tweet">
+  <a class="u-linkComplex" href="https://twitter.com/{user.screenname}">
+    <img class="u-objLeft" src="{user.avatar}" alt="">
+    <b class="Tweet-fullname u-linkComplex-target">{user.name}</b>
+    <span class="Tweet-screenname u-textMute u-textSmall">@{user.screenname}</span>
+  </a>
+  ...
+</div>
+```
+
+### Avoid contextual styles; use modifiers
+
+**Components should be unaware of, and unaffected by their context.**
+
+Your component should not directly override styles of nested components. There
+are 3 main reasons for this:
+
+1. To avoid coupling the nested component's appearance to a context that it
+   cannot depend on.
+
+2. To avoid the ancestral component from unintentionally overriding the styles
+   of the descendent component in other nested contexts that are not
+   anticipated.
+
+3. To avoid increasing the specificity of selectors unnecessarily.
+
+If you need variants on a component, use modifier classes. If you need
+ancestral context, use a dedicated "mixin" class (`with-ComponentName`) that is
+the responsibility of the component being affected.
+
+GOOD:
+
+```scss
+.Tweet { /* ... */ }
+
+/* Modifier */
+.Tweet--withExpansion { /* ... */ }
+
+/* Mixin */
+.with-Tweet-actions--toggleVisibility .Tweet-actions { /* ... */ }
+.with-Tweet-actions--toggleVisibility:hover .Tweet-actions { /* ... */ }
+```
+
+BAD:
+
+```scss
+.Tweet { /* ... */ }
+.Homepage .Tweet { /* ... */ }
+.Stream-item .Tweet-actions { /* ... */ }
+.Stream-item:hover .Tweet-actions { /* ... */ }
+```
+
+Or create a descendant interface for the outer component (this can be composed
+with a top-level component's interface).
+
+GOOD:
 
 ```css
-/* Buttons need their own custom adjustments when they contain icons */
-.Button--withIcon { padding-left: 0; }
+.Timeline { /* ... */ }
+.Timeline-button { /* ... */ }
 ```
 
 ```html
-<button class="Button Button--withIcon">
-  <i class="Icon Icon--retweet"></i>
-  Retweet
-</button>
+<div class="Timeline">
+  <span class="Timeline-button">
+    <button class="Button" type="button">...</button>
+  </span>
+</div>
 ```
 
-## Notes
+BAD:
 
-If a component needs to be replaced, mark it as deprecated – `@tag
-deprecated` – and initiate a gradual phase out.
+```css
+.Timeline { /* ... */ }
+.Timeline .Button { /* ... */ }
+```
 
-If a component needs to be created, please ensure that it's well
-documented/commented. It's very important for other people to know at any point
-in time what a component does, how it does it, and any short-comings it may
-have.
+```html
+<div class="Timeline">
+  <button class="Button">...</button>
+</div>
+```
+
+### Scope styles
+
+**Components should avoid polluting the context of their descendents.**
+
+Be careful about specifying inheritable styles within your component, so that
+you don't unnecessarily pollute the context of descendent components. Often, it
+is better to create a new class within your component to apply styles directly
+to a descendent element.
+
+GOOD:
+
+```css
+.Tweet-text { /* ... */ }
+```
+
+BAD:
+
+```css
+.Tweet p { /* ... */ }
+```
+
+### Couple state
+
+Components may have local state. You should scope state classes (`is-*`) to the
+component's class:
+
+```css
+.Component.is-someState { /* ... */ }
+```
