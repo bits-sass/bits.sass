@@ -1,5 +1,7 @@
 === HEAD
 
+* Add RWD documentation
+
 === 0.6.0 (September 2, 2013)
 
 * Complete rewrite of documentation

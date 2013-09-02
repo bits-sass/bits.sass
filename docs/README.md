@@ -13,6 +13,7 @@
     * [js-someName](naming-conventions.md#js-someName)
 * [Utilities](utilities.md)
 * [Components](components.md)
+* [Responsive web design](responsive.md)
 * [Architecture](architecture.md)
 * [API](api.md)
 * [Misc](misc.md)
