@@ -1,5 +1,17 @@
 === HEAD
 
+=== 0.6.0 (September 2, 2013)
+
+* Complete rewrite of documentation
+* Bump `bits-sass-arrange` dependency to ~0.3.0
+* Bump `bits-sass-base` dependency to ~0.1.3
+* Bump `bits-sass-button` dependency to ~0.2.2
+* Bump `bits-sass-button-group` dependency to ~0.3.0
+* Bump `bits-sass-flex-embed` dependency to ~0.3.1
+* Bump `bits-sass-grid` dependency to ~0.3.0
+* Bump `bits-sass-helpers` dependency to ~0.6.0
+* Bump `bits-sass-utils` dependency to ~0.8.0
+
 === 0.5.0 (August 25, 2013)
 
 * Bump `bits-sass-utils` dependency to ~0.7.0
