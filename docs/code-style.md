@@ -493,7 +493,7 @@ An example of various conventions.
     border-width: 4px;
 }
 
-/* With mixins
+/* Withs
    ========================================================================== */
 
 /**
@@ -503,4 +503,10 @@ An example of various conventions.
 .with-Grid {
   width: 150%;
 }
+
+/* Misc
+   ========================================================================== */
+
+/* Some miscellaneous styles like border-radius removal via pseudo classes */
+
 ```
