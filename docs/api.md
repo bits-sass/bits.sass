@@ -44,6 +44,7 @@ individual packages for details of their API.
 * `u-objLeft`
 * `u-objRight`
 * `u-blockCenter`
+* `u-blockRight`
 * `u-alignTop`
 * `u-alignMiddle`
 * `u-alignBaseline`
