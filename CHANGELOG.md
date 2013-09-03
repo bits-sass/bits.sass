@@ -1,6 +1,7 @@
 === HEAD
 
 * Add RWD documentation
+* Bump `bits-sass-utils` dependency to ~0.9.0
 
 === 0.6.0 (September 2, 2013)
 
