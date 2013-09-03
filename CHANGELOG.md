@@ -1,5 +1,7 @@
 === HEAD
 
+=== 0.7.0 (September 3, 2013)
+
 * Add RWD documentation
 * Bump `bits-sass-utils` dependency to ~0.9.0
 * Bump `bits-sass-grid` dependency to ~0.4.0
