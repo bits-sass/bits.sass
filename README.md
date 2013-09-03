@@ -21,7 +21,8 @@ Dependencies are best managed using [Bower](http://bower.io) – a package manag
 
 __Utilities__: [all](https://github.com/bits-sass/utils), [detailed info](docs/utilities.md)
 
-* [Dimension](https://github.com/bits-sass/utils-dimension)
+* [Dimension](https://github.com/bits-sass/utils-dimension) /
+  [_responsive_](https://github.com/bits-sass/responsive-utils-dimension)
 * [Display](https://github.com/bits-sass/utils-display) /
   [_responsive_](https://github.com/bits-sass/responsive-utils-display)
 * [Image](https://github.com/bits-sass/utils-image)
