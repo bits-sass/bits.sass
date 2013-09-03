@@ -28,7 +28,8 @@ __Utilities__: [all](https://github.com/bits-sass/utils), [detailed info](docs/u
 * [Image](https://github.com/bits-sass/utils-image)
 * [Layout](https://github.com/bits-sass/utils-layout)
 * [Link](https://github.com/bits-sass/utils-link)
-* [Offset](https://github.com/bits-sass/utils-offset)
+* [Offset](https://github.com/bits-sass/utils-offset) /
+  [_responsive_](https://github.com/bits-sass/responsive-utils-offset)
 * [Space](https://github.com/bits-sass/utils-space) /
   [_responsive_](https://github.com/bits-sass/responsive-utils-space)
 * [State](https://github.com/bits-sass/utils-state)
