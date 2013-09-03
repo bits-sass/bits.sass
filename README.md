@@ -28,7 +28,7 @@ __Utilities__: [all](https://github.com/bits-sass/utils), [detailed info](docs/u
 * [Link](https://github.com/bits-sass/utils-link)
 * [Offset](https://github.com/bits-sass/utils-offset)
 * [Space](https://github.com/bits-sass/utils-space) /
-[_responsive_](https://github.com/bits-sass/responsive-utils-space)
+  [_responsive_](https://github.com/bits-sass/responsive-utils-space)
 * [State](https://github.com/bits-sass/utils-state)
 * [Text](https://github.com/bits-sass/utils-text)
 
@@ -41,12 +41,12 @@ __Helpers__: [all](https://github.com/bits-sass/helpers)
 __Components__: [detailed info](docs/components.md)
 
 * [Arrange](https://github.com/bits-sass/arrange) /
-[_responsive_](https://github.com/bits-sass/responsive-arrange)
+  [_responsive_](https://github.com/bits-sass/responsive-arrange)
 * [Button](https://github.com/bits-sass/button)
 * [Button group](https://github.com/bits-sass/button-group)
 * [Flexible embeds](https://github.com/bits-sass/flex-embed)
 * [Grid](https://github.com/bits-sass/grid) /
-[_responsive_](https://github.com/bits-sass/responsive-grid)
+  [_responsive_](https://github.com/bits-sass/responsive-grid)
 
 ## Features
 
