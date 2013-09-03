@@ -32,7 +32,8 @@ __Utilities__: [all](https://github.com/bits-sass/utils), [detailed info](docs/u
 * [Space](https://github.com/bits-sass/utils-space) /
   [_responsive_](https://github.com/bits-sass/responsive-utils-space)
 * [State](https://github.com/bits-sass/utils-state)
-* [Text](https://github.com/bits-sass/utils-text)
+* [Text](https://github.com/bits-sass/utils-text) /
+  [_responsive_](https://github.com/bits-sass/responsive-utils-text)
 
 __Helpers__: [all](https://github.com/bits-sass/helpers)
 
