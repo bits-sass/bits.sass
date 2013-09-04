@@ -50,6 +50,7 @@ __Components__: [detailed info](docs/components.md)
 * [Button](https://github.com/bits-sass/button)
 * [Button group](https://github.com/bits-sass/button-group)
 * [Flexible embeds](https://github.com/bits-sass/flex-embed)
+* [Form control](https://github.com/bits-sass/form-control)
 * [Grid](https://github.com/bits-sass/grid) /
   [_responsive_](https://github.com/bits-sass/responsive-grid)
 
