@@ -211,6 +211,13 @@ individual packages for details of their API.
 * `FlexEmbed--16by9`
 * `FlexEmbed-item`
 
+### [Form control](https://github.com/bits-sass/form-control)
+
+* `FormControl`
+* `FormControl--textarea`
+* `FormControl--checkbox`
+* `FormControl--radio`
+
 ### [Grid](https://github.com/bits-sass/grid)
 
 * `Grid`
