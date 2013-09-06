@@ -1,5 +1,6 @@
 === HEAD
 
+* Add `bits-sass-form-control` dependency (~0.2.0)
 === 0.7.0 (September 3, 2013)
 
 * Add RWD documentation

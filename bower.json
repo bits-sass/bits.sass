@@ -8,6 +8,7 @@
     "bits-sass-button": "~0.2.2",
     "bits-sass-button-group": "~0.3.0",
     "bits-sass-flex-embed": "~0.3.1",
+    "bits-sass-form-control": "~0.2.0",
     "bits-sass-grid": "~0.4.0",
     "bits-sass-helpers": "~0.6.0",
     "bits-sass-utils": "~0.9.0"
