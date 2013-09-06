@@ -198,12 +198,6 @@ individual packages for details of their API.
 * `Button--full`
 * `Button.is-disabled`
 
-### [Button group](https://github.com/bits-sass/button-group)
-
-* `ButtonGroup`
-* `ButtonGroup--vertical`
-* `ButtonGroup-item`
-
 ### [Flexible embeds](https://github.com/bits-sass/flex-embed)
 
 * `FlexEmbed`
