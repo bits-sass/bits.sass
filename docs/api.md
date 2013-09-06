@@ -219,4 +219,8 @@ individual packages for details of their API.
 * `Grid--middle`
 * `Grid--bottom`
 * `Grid-cell`
-* `Grid-cell--center`
+* `Grid-cell--center`### [group](https://github.com/bits-sass/group)
+
+* `Group`
+* `Group--vertical`
+* `Group-item`

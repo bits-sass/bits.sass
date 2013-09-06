@@ -52,6 +52,7 @@ __Components__: [detailed info](docs/components.md)
 * [Form control](https://github.com/bits-sass/form-control)
 * [Grid](https://github.com/bits-sass/grid) /
   [_responsive_](https://github.com/bits-sass/responsive-grid)
+* [Group](https://github.com/bits-sass/group)
 
 ## Features
 
