@@ -208,7 +208,6 @@ individual packages for details of their API.
 ### [Form control](https://github.com/bits-sass/form-control)
 
 * `FormControl`
-* `FormControl--textarea`
 * `FormControl--checkbox`
 * `FormControl--radio`
 
@@ -219,7 +218,9 @@ individual packages for details of their API.
 * `Grid--middle`
 * `Grid--bottom`
 * `Grid-cell`
-* `Grid-cell--center`### [group](https://github.com/bits-sass/group)
+* `Grid-cell--center`
+
+### [group](https://github.com/bits-sass/group)
 
 * `Group`
 * `Group--vertical`
