@@ -4,6 +4,7 @@
 * Remove `bits-sass-button-group` dependency
 * Add `bits-sass-group` dependency (~0.1.0)
 * Update API
+* Add `bits-sass-collection` dependency (~0.1.0)
 
 === 0.7.0 (September 3, 2013)
 

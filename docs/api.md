@@ -198,6 +198,14 @@ individual packages for details of their API.
 * `Button--full`
 * `Button.is-disabled`
 
+### [Collection](https://github.com/bits-sass/collection)
+
+* `Collection`
+* `Collection--center`
+* `Collection--middle`
+* `Collection--bottom`
+* `Collection-item`
+
 ### [Flexible embeds](https://github.com/bits-sass/flex-embed)
 
 * `FlexEmbed`

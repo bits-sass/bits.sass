@@ -6,6 +6,7 @@
     "bits-sass-arrange": "~0.3.0",
     "bits-sass-base": "~0.1.3",
     "bits-sass-button": "~0.2.2",
+    "bits-sass-collection": "~0.1.0",
     "bits-sass-flex-embed": "~0.3.1",
     "bits-sass-form-control": "~0.2.0",
     "bits-sass-grid": "~0.4.0",
