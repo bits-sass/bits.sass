@@ -1,6 +1,6 @@
 {
   "name": "bits-sass",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "author": "Lukáš Mladý",
   "dependencies": {
     "bits-sass-arrange": "~0.3.0",

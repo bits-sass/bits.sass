@@ -1,5 +1,7 @@
 === HEAD
 
+=== 0.8.0 (September x, 2013)
+
 * Add `bits-sass-form-control` dependency (~0.2.0)
 * Remove `bits-sass-button-group` dependency
 * Add `bits-sass-group` dependency (~0.1.0)
